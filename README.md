@@ -1,5 +1,2 @@
-==========================================
-My personal website
-==========================================
-
-[Website](http://jonarrien.github.io)
+[My personal website](http://jonarrien.github.io)
+=================================================
