@@ -8,112 +8,189 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse  navbar-fixed-bottom" role="navigation">
+  <nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Jon Arrien's Personal Website</a>
-    </div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Personal Website</a>
+      </div>
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://twitter.com/jonarrien">Twitter</a></li>
-        <li><a href="https://github.com/jonarrien">GitHub</a></li>
-        <li><a href="http://www.linkedin.com/pub/jon-arrien/20/b79/492">Linkedin</a></li>
-      </ul>
-      <!--
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://twitter.com/jonarrien">Twitter</a></li>
+          <li><a href="https://github.com/jonarrien">GitHub</a></li>
+          <li><a href="http://www.linkedin.com/pub/jon-arrien/20/b79/492">Linkedin</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <div class="container" style="margin-top: 15px">
+
     <div class="row">
-      <div class="col-sm-4">
-        <h1>
-          <i class="glyphicon glyphicon-user"></i>
-          Jon Arrien
-        </h1>
-        <hr>
-        <small>
-          <p class="lead">About myself:</p>
-          Mac OSX and Terminal addict.
-          <br>
-          Sublime Text Lover and Keybinding Zealot.
-        </small>
 
-      </div>
-      <div class="col-sm-8">
-        <h1>
-          <i class="glyphicon glyphicon-align-justify"></i>
-          Experience
-        </h1>
-        <hr>
-
-        <h4 class="strong">Programming Languages</h4>
-        <p>
-          Ruby, Objective-C, CoffeeScript, Python, Java.
-        </p>
-        <h4 class="strong">Databases</h4>
-        <p>
-          PostgreSQL, MySQL, MongoDB, Sqlite & Oracle
-        </p>
-        <h4 class="strong">Other</h4>
-        <p>
-          Semantic Web, ElasticSearch, Redis, AWS
-        </p>
-        <h4 class="strong">Tools</h4>
-        <p>
-          SublimeText 2, MacVim, XCode, iTerm2, Oh My Zsh, Alfred 2, Things (GTD)
-        </p>
-
-        <!--
-        <div id="carousel-example-generic" class="carousel slide" data-interval="500" data-wrap="true">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="img/rubyrails.png" alt="Ruby On Rails">
-              <div class="carousel-caption">
-                <p class="lead">bla bla bla</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/ios7.jpg" alt="Ruby On Rails">
-            </div>
-
-          </div>
-
+      <div class="col-md-4">
+        <img src="img/furgo.png" class="pull-right" style="max-width: 120px; margin-left:0">
+        <div class="caption">
+          <h3 style="margin-top:0">Jon Arrien</h3>
+          <p class="lead">
+            Full Stack Developer
+          </p>
         </div>
-        <script>
-          $('.carousel').carousel({
-            interval: 5000
-          })
-        </script>
-        -->
+      </div>
+
+      <div class="col-md-8">
+        <p class="lead" style="margin-bottom:0">
+          <strong>
+            Ruby and iOS Expert.
+          </strong>
+          <br>
+          Sublime Text Lover, Terminal addict and Keybinding Zealot.
+        </p>
+        <small>Sometimes I save the world from disaster. Available for hire.</small>
 
       </div>
     </div>
+
+    <div class="well" style="margin-top: 30px">
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <legend>
+            Programming Languages
+          </legend>
+          <p>
+            My programming language of choice are Ruby and Objective-C, but my
+            background belongs to Java and PHP.
+
+            <div style="padding: 5px 0">
+              <span class="label label-primary">Ruby</span>
+              <span class="label label-primary">Objective-C</span>
+              <span class="label label-primary">Java</span>
+              <span class="label label-primary">Python</span>
+              <span class="label label-primary">C++</span>
+              <span class="label label-primary">PHP</span>
+            </div>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <legend>
+            <i class="fa fa-cog"></i>
+            Frontend
+          </legend>
+          <p>
+            I have a long background using different kind of frontend
+            frameworks.
+
+            <div style="padding: 5px 0">
+              <span class="label label-primary">CoffeeScript</span>
+              <span class="label label-primary">Sass</span>
+              <span class="label label-primary">Less</span>
+              <span class="label label-primary">Bootstrap</span>
+              <span class="label label-primary">Foundation</span>
+              <span class="label label-primary">Dojo Toolkit</span>
+              <span class="label label-primary">Sencha</span>
+              <span class="label label-primary">Mustache</span>
+              <span class="label label-primary">Handlebars</span>
+              <span class="label label-primary">HoganJS</span>
+            </div>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <legend>
+            <i class="fa fa-cog"></i>
+            Databases
+          </legend>
+          <p>
+            I have experience handling multiple types of databases.
+            <div style="padding: 5px 0">
+              <span class="label label-primary">MongoDB</span>
+              <span class="label label-primary">PostgreSQL</span>
+              <span class="label label-primary">Oracle</span>
+              <span class="label label-primary">MySQL</span>
+              <span class="label label-primary">Sqlite</span>
+            </div>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <legend>
+            <i class="fa fa-cog"></i>
+            Systems / Cloud
+          </legend>
+          <p>
+            <div style="padding: 5px 0">
+              <span class="label label-primary">Linux</span>
+              <span class="label label-primary">Mac OSX</span>
+              <span class="label label-primary">AWS</span>
+              <!-- <span class="label label-primary">Capistrano</span> -->
+              <!-- <span class="label label-primary">Nginx</span> -->
+            </div>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <legend>
+            <i class="fa fa-cog"></i>
+            Good Practices
+          </legend>
+          <p>
+            I like to develop taking care of good practices like DRY, YAGNI or
+            KISS and base my devopment on a behaviour driven development. This
+            are some tools or techniques I use:
+            <div style="padding: 5px 0">
+              <span class="label label-primary">Scrum</span>
+              <span class="label label-primary">Kanban</span>
+              <span class="label label-primary">TDD</span>
+              <span class="label label-primary">BDD</span>
+              <span class="label label-primary">CI</span>
+              <span class="label label-primary">Cucumber</span>
+              <span class="label label-primary">RSpec</span>
+              <span class="label label-primary">Continuous Integration</span>
+              <span class="label label-primary">GTD (Thins)</span>
+              <span class="label label-primary">iTerm 2</span>
+              <span class="label label-primary">ZSH</span>
+              <span class="label label-primary">Sublime Text 2</span>
+              <span class="label label-primary">Vim</span>
+              <span class="label label-primary">Snippets</span>
+              <span class="label label-primary">Alfred 2</span>
+            </div>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <legend>
+            <i class="fa fa-cog"></i>
+            Others
+          </legend>
+          <p>
+            I have experience heading all type of projects, from small to large projects.
+            <div style="padding: 5px 0">
+              <span class="label label-primary">Django</span>
+              <span class="label label-primary">BackboneJS</span>
+              <span class="label label-primary">EmberJS</span>
+              <span class="label label-primary">ElasticSearch</span>
+              <span class="label label-primary">Redis</span>
+              <span class="label label-primary">Virtuoso</span>
+              <span class="label label-primary">RDF</span>
+            </div>
+          </p>
+        </div>
+      </div>
+
+    </div><!-- well -->
+
   </div>
 
 </body>
