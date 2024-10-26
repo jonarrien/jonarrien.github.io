@@ -4,196 +4,324 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!--<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css" type="text/css" media="all" />
-  <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="https://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/842994b493.js" crossorigin="anonymous"></script>
+  <!--<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
 </head>
-<body>
-
-  <nav class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-
+<body class="p-0 bg-light">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Personal Website</a>
-      </div>
-
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://twitter.com/jonarrien">Twitter</a></li>
-          <li><a href="https://github.com/jonarrien">GitHub</a></li>
-          <li><a href="http://www.linkedin.com/pub/jon-arrien/20/b79/492">Linkedin</a></li>
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/furgo.png" class="rounded" alt="" width="24" height="24">
+        &nbsp;
+        Jon Arrien
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Social Media
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://twitter.com/jonarrien">Twitter</a></li>
+              <li><a class="dropdown-item" href="https://github.com/jonarrien">GitHub</a></li>
+              <li><a class="dropdown-item" href="http://www.linkedin.com/pub/jon-arrien/20/b79/492">Linkedin</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container" style="margin-top: 15px">
+  <header class="py-5 bg-light border-bottom mb-4">
+      <div class="container">
+          <div class="text-center my-2">
+              <h1 class="display-5">Software Magician</h1>
+              <p class="lead mb-0">Making challenging dreams become true </p>
+          </div>
+      </div>
+  </header>
 
-    <div class="row">
-
-      <div class="col-sm-4">
-        <img src="img/furgo.png" class="pull-right" style="max-width: 120px; margin-left:0">
-        <div class="caption">
-          <h3 style="margin-top:0">Jon Arrien</h3>
-          <p class="lead">
-            Full Stack Developer
-          </p>
+  <div class="container px-4 py-3" id="icon-grid">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-cloud fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Cloud Architect</h4>
+          <p>Designing scalable skies and seamless clouds</p>
         </div>
       </div>
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-arrows-rotate fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">DevSecOps</h4>
+          <p>Sharing the culture and building security into every commit</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-code fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Software Engineer</h4>
+          <p>Turning complex problems into elegant solutions</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-shield-halved fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Compliance</h4>
+          <p>The difficult guy. Guarding data and ensuring trust</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-brands fa-apple fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">macOS / iOS</h4>
+          <p>Crafting secure, smooth, and stunning Apple experiences</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-regular fa-keyboard fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Editors &amp; Keyboards</h4>
+          <p>Efficiency starts with every keystroke</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-regular fa-mountain-sun fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Remote Working</h4>
+          <p>Creating impact, wherever mountain I am lost in</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fa-regular fa-person-biking fa-xl text-muted flex-shrink-0 me-3 mt-3"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Mountain Biking</h4>
+          <p>Thriving on trails and conquering peaks</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <div class="col-sm-8">
-        <p class="lead" style="margin-bottom:0">
-          <strong>
-            Ruby and iOS Expert.
-          </strong>
-          <br>
-          Sublime Text Lover, Terminal addict and Keybinding Zealot.
-        </p>
-        <small>Sometimes I save the world from disaster. Available for hire.</small>
+  <hr>
 
+  <div class="container px-4 py-3" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+      <div class="feature col">
+        <h2>Languages</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/OBJECTIVE--C-%233A95E3.svg?style=for-the-badge&logo=apple&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515"></img>
+        </div>
+      </div>
+      <div class="feature col">
+        <h2>Infrastructure</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Openstack-%23f01742.svg?style=for-the-badge&logo=openstack&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/ovh-%23123F6D.svg?style=for-the-badge&logo=ovh&logoColor=#123F6D"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/OpenTelemetry-FFFFFF?&style=for-the-badge&logo=opentelemetry&logoColor=black"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white"></img>
+        </div>
       </div>
     </div>
 
-    <div class="well" style="margin-top: 30px">
+    <hr>
+  </div>
 
-      <div class="row">
 
-        <div class="col-sm-6">
-          <legend>
-            Programming Languages
-          </legend>
-          <p>
-            My programming language of choice are Ruby and Objective-C, but my
-            background belongs to Java and PHP.
-
-            <div style="padding: 5px 0">
-              <span class="label label-primary">Ruby</span>
-              <span class="label label-primary">Objective-C</span>
-              <span class="label label-primary">Java</span>
-              <span class="label label-primary">Python</span>
-              <span class="label label-primary">C++</span>
-              <span class="label label-primary">PHP</span>
-            </div>
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <legend>
-            <i class="fa fa-cog"></i>
-            Frontend
-          </legend>
-          <p>
-            I have a long background using different kind of frontend
-            frameworks.
-
-            <div style="padding: 5px 0">
-              <span class="label label-primary">CoffeeScript</span>
-              <span class="label label-primary">Sass</span>
-              <span class="label label-primary">Less</span>
-              <span class="label label-primary">Bootstrap</span>
-              <span class="label label-primary">Foundation</span>
-              <span class="label label-primary">Dojo Toolkit</span>
-              <span class="label label-primary">Sencha</span>
-              <span class="label label-primary">Mustache</span>
-              <span class="label label-primary">Handlebars</span>
-              <span class="label label-primary">HoganJS</span>
-            </div>
-          </p>
+  <div class="container px-4 py-3" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <h2>Editors</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/zed-084CCF.svg?style=for-the-badge&logo=zedindustries&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/sublime_text-%23575757.svg?style=for-the-badge&logo=sublime-text&logoColor=important"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Obsidian-%23483699.svg?style=for-the-badge&logo=obsidian&logoColor=white"></img>
         </div>
       </div>
-
-
-      <div class="row">
-        <div class="col-sm-6">
-          <legend>
-            <i class="fa fa-cog"></i>
-            Databases
-          </legend>
-          <p>
-            I have experience handling multiple types of databases.
-            <div style="padding: 5px 0">
-              <span class="label label-primary">MongoDB</span>
-              <span class="label label-primary">PostgreSQL</span>
-              <span class="label label-primary">Oracle</span>
-              <span class="label label-primary">MySQL</span>
-              <span class="label label-primary">Sqlite</span>
-            </div>
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <legend>
-            <i class="fa fa-cog"></i>
-            Systems / Cloud
-          </legend>
-          <p>
-            <div style="padding: 5px 0">
-              <span class="label label-primary">Linux</span>
-              <span class="label label-primary">Mac OSX</span>
-              <span class="label label-primary">AWS</span>
-              <!-- <span class="label label-primary">Capistrano</span> -->
-              <!-- <span class="label label-primary">Nginx</span> -->
-            </div>
-          </p>
+      <div class="feature col">
+        <h2>Operating Systems</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Alpine_Linux-%230D597F.svg?style=for-the-badge&logo=alpine-linux&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/cent%20os-002260?style=for-the-badge&logo=centos&logoColor=F0F0F0"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Kali-268BEE?style=for-the-badge&logo=kalilinux&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/OpenWRT-00B5E2?style=for-the-badge&logo=OpenWrt&logoColor=white"></img>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <legend>
-            <i class="fa fa-cog"></i>
-            Good Practices
-          </legend>
-          <p>
-            I like to develop taking care of good practices like DRY, YAGNI or
-            KISS and base my devopment on a behaviour driven development. This
-            are some tools or techniques I use:
-            <div style="padding: 5px 0">
-              <span class="label label-primary">Scrum</span>
-              <span class="label label-primary">Kanban</span>
-              <span class="label label-primary">TDD</span>
-              <span class="label label-primary">BDD</span>
-              <span class="label label-primary">CI</span>
-              <span class="label label-primary">Cucumber</span>
-              <span class="label label-primary">RSpec</span>
-              <span class="label label-primary">Continuous Integration</span>
-              <span class="label label-primary">GTD (Thins)</span>
-              <span class="label label-primary">iTerm 2</span>
-              <span class="label label-primary">ZSH</span>
-              <span class="label label-primary">Sublime Text 2</span>
-              <span class="label label-primary">Vim</span>
-              <span class="label label-primary">Snippets</span>
-              <span class="label label-primary">Alfred 2</span>
-            </div>
-          </p>
-        </div>
-        <div class="col-sm-6">
-          <legend>
-            <i class="fa fa-cog"></i>
-            Others
-          </legend>
-          <p>
-            I have experience heading all type of projects, from small to large projects.
-            <div style="padding: 5px 0">
-              <span class="label label-primary">Django</span>
-              <span class="label label-primary">BackboneJS</span>
-              <span class="label label-primary">EmberJS</span>
-              <span class="label label-primary">ElasticSearch</span>
-              <span class="label label-primary">Redis</span>
-              <span class="label label-primary">Virtuoso</span>
-              <span class="label label-primary">RDF</span>
-            </div>
-          </p>
+      <div class="feature col">
+        <h2>Databases</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"></img>
         </div>
       </div>
+    </div>
+    <hr>  
+  </div>
 
-    </div><!-- well -->
 
+  <div class="container px-4 py-3" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+      <div class="feature col">
+        <h2>Version Control</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/subversion-%23809CC9.svg?style=for-the-badge&logo=subversion&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Freelancer-29B2FE?style=for-the-badge&logo=Freelancer&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/UpWork-6FDA44?style=for-the-badge&logo=Upwork&logoColor=white"></img>
+        </div>
+      </div>
+      <div class="feature col">
+        <h2>Web Servers</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white"></img>
+        </div>
+      </div>
+      <div class="feature col">
+        <h2>Frameworks</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/ember-1C1E24?style=for-the-badge&logo=ember.js&logoColor=#D04A37"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white"></img>
+
+        </div>
+      </div>
+      <div class="feature col">
+        <h2>Productivity</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/alfred-%235C1F87.svg?style=for-the-badge&logo=alfred"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/confluence-%23172BF4.svg?style=for-the-badge&logo=confluence&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/GTD-%234DC730.svg?style=for-the-badge"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/ZSH-%234DC730.svg?style=for-the-badge"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/iTerm2-%234DC730.svg?style=for-the-badge"></img>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+
+  <div class="container px-4 py-3" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+      <div class="feature col">
+        <h2>Other</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/SonarQube-black?style=for-the-badge&logo=sonarqube&logoColor=4E9BCD"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio logoColor=white"></img>
+
+          <img class="mb-1" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Skype-%2300AFF0.svg?style=for-the-badge&logo=Skype&logoColor=white"></img>
+
+          <img class="mb-1" src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"></img>
+
+          <img class="mb-1" src="https://img.shields.io/badge/GitBook-%23000000.svg?style=for-the-badge&logo=gitbook&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/-42-black?style=for-the-badge&logo=42&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Coursera-%230056D2.svg?style=for-the-badge&logo=Coursera&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Duolingo-%234DC730.svg?style=for-the-badge&logo=Duolingo&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/edX-%2302262B.svg?style=for-the-badge&logo=edX&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/elasticsearch-%230377CC.svg?style=for-the-badge&logo=elasticsearch&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"></img>
+        </div>
+      </div>
+      <div class="feature col">
+        <h2>Music</h2>
+        <div>
+          <img src="https://img.shields.io/badge/Apple_Music-9933CC?style=for-the-badge&logo=apple-music&logoColor=white"></img>
+          <img src="https://img.shields.io/badge/soundcloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white"></img>
+          <img src="https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white"></img>
+        </div>
+      </div>
+    </div>
+    <hr>  
+  </div>
+
+  <div class="container px-4 py-3" id="featured-3">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-1">
+      <div class="feature col">
+        <h2>Hobbies</h2>
+        <div>
+          <img class="mb-1" src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Nokia-%23124191.svg?style=for-the-badge&logo=nokia&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Amazon%20Prime-0F79AF?style=for-the-badge&logo=amazonprime&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Apple%20TV-000000?style=for-the-badge&logo=Apple%20TV&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white"></img>
+
+          <img class="mb-1" src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></img>
+
+          <img class="mb-1" src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white"></img>
+          <img class="mb-1" src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"></img>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
